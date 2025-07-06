@@ -7,7 +7,7 @@ const WeatherDisplay = () => {
 
   if (loading) return <p className="text-center text-blue-500">Loading...</p>;
   if (error) return <p className="text-center text-red-500">{error}</p>;
-  if (!weatherData) return <p className="text-center text-gray-500">No data yet.</p>;
+  if (!weatherData) return <p className="text-center text-gray-500 pt-2">No data available</p>;
 
   const { name, main, weather, wind } = weatherData;
 
